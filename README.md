@@ -1,13 +1,16 @@
 # msk-mdi/tap
 
-Homebrew formulae for [MdEdit](https://github.com/msk-mdi/MDedit), a native
+Homebrew cask for [MdEdit](https://github.com/msk-mdi/MDedit), a native
 in-place WYSIWYG markdown editor for macOS 26.
 
 ```sh
 brew install msk-mdi/tap/mdedit
-ln -sf "$(brew --prefix mdedit)/MdEdit.app" /Applications/MdEdit.app
 ```
 
-The formula builds MdEdit on your Mac (it needs Xcode 26 or its Command Line
-Tools), so the app opens without Gatekeeper's warning. `brew upgrade mdedit`
-updates it; `brew install --HEAD msk-mdi/tap/mdedit` builds the latest `main`.
+MdEdit lands in /Applications, ready to open, and the `mdedit` command
+(`mdedit --render notes.md`) on your path. `brew upgrade` updates it, and
+`brew uninstall --zap mdedit` removes it with its settings.
+
+MdEdit is not notarized by Apple (that takes a paid developer account), so the
+cask clears the quarantine flag on the downloaded app; macOS opens it without
+the "could not verify" prompt.
