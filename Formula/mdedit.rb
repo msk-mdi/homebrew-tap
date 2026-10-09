@@ -9,8 +9,8 @@
 class Mdedit < Formula
   desc "Native in-place WYSIWYG markdown editor"
   homepage "https://github.com/msk-mdi/MDedit"
-  url "https://github.com/msk-mdi/MDedit/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "6239baf951fbc1bafbd20bbd2d9d071405ada137d7ef61e164b785e8cfe90281"
+  url "https://github.com/msk-mdi/MDedit/archive/refs/tags/v0.9.1.tar.gz"
+  sha256 "7e7b70682fac9552852bb9bca775c66d079d0a195862eac399d598c727bde778"
   license "Apache-2.0"
   head "https://github.com/msk-mdi/MDedit.git", branch: "main"
 
