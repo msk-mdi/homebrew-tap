@@ -1,7 +1,11 @@
 # msk-mdi/tap
 
-Homebrew cask for [MdEdit](https://github.com/msk-mdi/MDedit), a native
-in-place WYSIWYG markdown editor for macOS 26.
+Homebrew casks for my macOS apps.
+
+## MdEdit
+
+[MdEdit](https://github.com/msk-mdi/MDedit) is a native in-place WYSIWYG
+markdown editor for macOS 26.
 
 ```sh
 brew install msk-mdi/tap/mdedit
@@ -11,6 +15,20 @@ MdEdit lands in /Applications, ready to open, and the `mdedit` command
 (`mdedit --render notes.md`) on your path. `brew upgrade` updates it, and
 `brew uninstall --zap mdedit` removes it with its settings.
 
-MdEdit is not notarized by Apple (that takes a paid developer account), so the
-cask clears the quarantine flag on the downloaded app; macOS opens it without
-the "could not verify" prompt.
+## ToWatchDB
+
+[ToWatchDB](https://github.com/msk-mdi/ToWatchDB) tracks the movies and shows
+you watch, for macOS 15 or later.
+
+```sh
+brew install msk-mdi/tap/towatchdb
+```
+
+ToWatchDB lands in /Applications, ready to open. `brew upgrade` updates it,
+and `brew uninstall --zap towatchdb` removes it with its library.
+
+## Gatekeeper
+
+These apps are not notarized by Apple (that takes a paid developer account),
+so the casks clear the quarantine flag on the downloaded app; macOS opens it
+without the "could not verify" prompt.
