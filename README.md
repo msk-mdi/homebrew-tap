@@ -1,6 +1,6 @@
 # msk-mdi/tap
 
-Homebrew casks for my macOS apps.
+Homebrew casks and formulae for my macOS apps and tools.
 
 ## MdEdit
 
@@ -26,6 +26,17 @@ brew install msk-mdi/tap/towatchdb
 
 ToWatchDB lands in /Applications, ready to open. `brew upgrade` updates it,
 and `brew uninstall --zap towatchdb` removes it with its library.
+
+## macpack
+
+[macpack](https://github.com/msk-mdi/macpack) exports macOS settings to a
+portable profile and applies them on another Mac, from a terminal UI.
+
+```sh
+brew install msk-mdi/tap/macpack
+```
+
+`brew upgrade` updates it.
 
 ## Gatekeeper
 
