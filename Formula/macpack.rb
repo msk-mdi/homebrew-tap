@@ -2,7 +2,7 @@
 # Formula/macpack.rb:
 #   brew install msk-mdi/tap/macpack
 # It installs the release's universal binary (Apple silicon and Intel).
-# macpack's release workflow updates version and sha256 for each release.
+# macpack's release workflow updates url and sha256 for each release.
 class Macpack < Formula
   desc "Export macOS settings to a portable profile and apply them on another Mac"
   homepage "https://github.com/msk-mdi/macpack"
