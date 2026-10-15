@@ -6,8 +6,8 @@
 class Macpack < Formula
   desc "Export macOS settings to a portable profile and apply them on another Mac"
   homepage "https://github.com/msk-mdi/macpack"
-  url "https://github.com/msk-mdi/macpack/releases/download/v1.0.0/macpack-v1.0.0-universal-apple-darwin.tar.gz"
-  sha256 "a75e408275f7e5179afa33f893c9933f534fb9a136ee9199e956f01886aaf908"
+  url "https://github.com/msk-mdi/macpack/releases/download/v1.1.0/macpack-v1.1.0-universal-apple-darwin.tar.gz"
+  sha256 "1dc1eecd89f03e7a27907e3974f414a4da4676be3555a19c1e5ecd912a6aac07"
 
   livecheck do
     url :stable
@@ -18,6 +18,8 @@ class Macpack < Formula
 
   def install
     bin.install "macpack"
+    generate_completions_from_executable(bin/"macpack", "completions")
+    (man1/"macpack.1").write Utils.safe_popen_read(bin/"macpack", "man")
   end
 
   test do
