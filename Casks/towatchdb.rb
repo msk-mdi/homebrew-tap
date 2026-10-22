@@ -7,8 +7,8 @@
 # opens without Gatekeeper's prompt.
 # For each release, set version and the zip's sha256 (shasum -a 256).
 cask "towatchdb" do
-  version "2.0.3"
-  sha256 "c84d213e52ad4feb7981fff340ef5b2aee438e7d318ed0a6149f2015cb59e205"
+  version "2.0.4"
+  sha256 "96c634824e8046822260effec90b67d46684668857305b860b9c0868661872ae"
 
   url "https://github.com/msk-mdi/ToWatchDB/releases/download/MacOS-#{version}/ToWatchDB.app.zip"
   name "ToWatchDB"
