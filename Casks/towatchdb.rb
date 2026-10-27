@@ -30,5 +30,14 @@ cask "towatchdb" do
                           writable_paths: ["ToWatchDB.app"], writable_base: :appdir
   end
 
-  zap trash: "~/Library/Containers/com.mehdi.towatchdb"
+  # The app's own `ToWatchDB --zap` empties its container and signs it out of Dropbox; this removes the rest.
+  zap trash: [
+    "~/Library/Application Scripts/com.mehdi.towatchdb",
+    "~/Library/Application Support/CrashReporter/ToWatchDB_*.plist",
+    "~/Library/Caches/com.mehdi.towatchdb",
+    "~/Library/Containers/com.mehdi.towatchdb",
+    "~/Library/HTTPStorages/com.mehdi.towatchdb",
+    "~/Library/Preferences/com.mehdi.towatchdb.plist",
+    "~/Library/Saved Application State/com.mehdi.towatchdb.savedState",
+  ]
 end
